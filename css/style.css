@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Handlee', cursive;
+    src: url(../fonts/Handlee/Handlee-Regular.ttf);
+}
+body{
+    font-family: 'Handlee', cursive;
+    padding: 100px 0;
+}
+nav .nav-shops{
+    padding: 9px 0 0 40px;
+    background: linear-gradient(to left top, rgb(255, 255, 255),rgb(214, 252, 242),rgb(162, 241, 220),rgb(16, 245, 188));
+    border-radius: 5px;
+}
+.nav-shops .nav-item-hats{
+    padding: 10px 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px 3px 0 0;
+}
+.nav-shops .nav-item-hats.active{
+    background: linear-gradient(to bottom, rgb(0, 0, 255),rgb(255, 242, 242));
+    color: rgb(255, 255, 255);
+}
+/* --------------------------------------------------------------*/ 
+.page-pro-content{
+    margin-top: 20px;
+    padding: 40px 20px;
+    background: rgba(236, 231, 231, 0.616);
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgb(95, 95, 95);
+}
+.product-img{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background: rgb(255, 255, 255);
+    padding-top: 80px;
+    box-shadow: 0 0 2px rgb(71, 69, 69);
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.product-img img{
+    width: 80%;
+    height: auto;
+}
+.product-img img:hover{
+    opacity: 0.7;
+    width: 85%;
+}
+
+/* Style section information product ---*/
+.infor-product{
+    background: linear-gradient(to bottom, rgb(0, 0, 255),rgb(92, 92, 253),rgb(62, 62, 235));
+    padding: 20px 0 5px 0;
+    border-radius: 0 0 5px 5px;
+    margin-top: 20px;
+}
+.product-img .name-pro{
+    padding: 10px 0 5px 0;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+.product-img .price .new-price{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 0;
+}
+.product-img .price .old-price{
+    text-decoration: line-through;
+    color: rgb(182, 179, 179);
+    font-size: 19px;
+}
+.product-img .buy-product{
+    width: 80%;
+    margin: 20px auto;
+    padding: 7px 0;
+    background: rgb(255, 63, 63);
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgb(245, 199, 199);
+    transition: all .4s;
+}
+.product-img .buy-product a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+.product-img .buy-product:hover{
+    background:  rgb(247, 24, 24);
+}
+.product-img .buy-product:hover a{
+    font-size: 24px
+}
+.infor-sale{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background: linear-gradient(to bottom, rgb(235, 14, 14),rgb(247, 120, 120),rgb(248, 37, 37));
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    animation-name: inforSale;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+/*  Animation section infor sale*/
+@keyframes inforSale{
+    0%{top:-90px; right: 100%; transform: rotate(-360deg);};
+    100%{top: 10px; right:10px;transform: rotate(360deg);};
+}
+.infor-sale:hover{
+    color: rgb(255, 255, 255);
+    animation-name: saleHover;
+    animation-duration: 3s;
+}
+@keyframes saleHover{
+    0%{transform: rotate(0deg);background: rgb(206, 203, 45);}
+    60%{transform: rotate(-360deg);background: rgb(74, 74, 228);}
+    100%{transform: rotate(360deg);background: rgb(250, 39, 39);}
+}
+
+/* THis is style hats men*/
+.infor-product-men{
+    background: linear-gradient(to bottom, rgb(0, 0, 0),rgb(38, 38, 46),rgb(15, 15, 15));
+}
+.hot-sale{
+    background: linear-gradient(to bottom, rgb(26, 24, 24),rgb(63, 63, 77),rgb(15, 15, 15));
+}
+
+.product-img .buy-hats-men{
+    background: rgb(30, 243, 232);
+}
+.product-img .buy-hats-men:hover{
+    background: rgb(0, 228, 245);
+}
+
+/* THis is style hats Girls*/
+
+.infor-product-girls{
+    background: linear-gradient(to bottom, rgb(212, 20, 116),rgb(236, 119, 178),rgb(236, 49, 143));
+}
+.hot-sale-girls{
+    background: linear-gradient(to bottom, rgb(212, 20, 116),rgb(236, 119, 178),rgb(236, 49, 143));
+}
+.product-img .buy-hats-girls{
+    background: rgb(75, 91, 241);
+}
+.product-img .buy-hats-girls:hover{
+    background: rgb(32, 32, 243);
+}
